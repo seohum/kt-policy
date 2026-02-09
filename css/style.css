@@ -1,0 +1,15 @@
+
+body { margin:0; font-family: Arial, sans-serif; }
+
+.title-bar {
+  display:flex;
+  align-items:center;
+  gap:12px;
+  padding:16px 20px;
+  border-bottom:1px solid #e5e5e5;
+  background:#fff;
+}
+
+.kt-logo { height:28px; }
+
+h1 { font-size:20px; margin:0; }
