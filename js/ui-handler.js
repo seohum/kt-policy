@@ -3,6 +3,31 @@ import { calcTotalPolicy, formatWonMan } from './policy-calc.js';
 
 const $ = (id) => document.getElementById(id);
 
+const INTERNET_ORDER = [
+  '슬림',
+  '슬림플러스↓',
+  '베이직',
+  '에센스'
+];
+
+const TV_ORDER = [
+  '라이트/베이직',
+  '에센스/플러스',
+  '모든G이상',
+  '모든G이상(MNP)'
+];
+
+function sortByOrder(list, order) {
+  return list.slice().sort((a, b) => {
+    const ia = order.indexOf(a);
+    const ib = order.indexOf(b);
+    if (ia === -1 && ib === -1) return 0;
+    if (ia === -1) return 1;
+    if (ib === -1) return -1;
+    return ia - ib;
+  });
+}
+
 const state = {
   bundle: '',
   internet: '',
@@ -55,7 +80,7 @@ function syncVisibility() {
 
 function rebuildInternet() {
   const rows = getRowsForBundle(state.bundle);
-  const internetList = uniq(rows.map(r => r.internet)).sort();
+  const internetList = sortByOrder(uniq(rows.map(r => r.internet)), INTERNET_ORDER);
   setOptions($('internet'), internetList, '선택');
   state.internet = internetList[0] || '';
   $('internet').value = state.internet;
@@ -63,7 +88,7 @@ function rebuildInternet() {
 
 function rebuildTv() {
   const rows = getRowsForBundle(state.bundle).filter(r => r.internet === state.internet);
-  const tvList = uniq(rows.map(r => r.tv)).sort();
+  const tvList = sortByOrder(uniq(rows.map(r => r.tv)), TV_ORDER);
   if (tvList.length === 0) {
     state.tv = null;
     $('tv').innerHTML = '';
