@@ -1,89 +1,29 @@
-<!doctype html>
-<html lang="ko">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>대구프론티어센터 정책표</title>
-  <link rel="stylesheet" href="./css/style.css" />
-</head>
+
+<!doctype html><html lang="ko"><head>
+<meta charset="utf-8"><link rel="stylesheet" href="./css/style.css"></head>
 <body>
-  <div class="container">
-    <div class="header">
-      <img src="./assets/kt-logo.png" alt="KT" />
-      <h1>대구프론티어센터 정책표</h1>
-    </div>
+<div class="wrap">
+<div class="header"><img id="logo" src="./assets/kt-logo.png"></div>
 
-    <div class="section">
-      <div class="section-title">정책 선택 </div>
-      <div class="pad">
-        <table class="table" aria-label="정책 선택 테이블">
-          <thead>
-            <tr>
-              <th style="width:18%">항목</th>
-              <th>선택</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>결합 유형</td>
-              <td><select id="bundle"></select></td>
-            </tr>
-            <tr>
-              <td>인터넷 상품</td>
-              <td><select id="internet"></select></td>
-            </tr>
-            <tr id="rowTv">
-              <td>TV 상품</td>
-              <td><select id="tv"></select></td>
-            </tr>
-            <tr>
-              <td>원스톱</td>
-              <td>
-                <select id="onestop">
-                  <option value="Y">O (적용)</option>
-                  <option value="N">X (미적용)</option>
-                </select>
-                
-              </td>
-            </tr>
-            <tr id="rowGenie3">
-              <td>기가지니3</td>
-              <td>
-                <select id="genie3">
-                  <option value="Y">O (적용)</option>
-                  <option value="N">X (미적용)</option>
-                </select>
-              </td>
-            </tr>
-            <tr id="rowWireless">
-              <td>무선구간</td>
-              <td><select id="wireless"></select></td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
+<div class="row">결합 유형 <select id="bundle"></select></div>
+<div class="row">인터넷 상품 <select id="internet"></select></div>
+<div class="row">TV 상품 <select id="tv"></select></div>
+<div class="row">원스톱 <select id="onestop"><option value="Y">O</option><option value="N">X</option></select></div>
+<div class="row">기가지니3 <select id="genie3"><option value="Y">O</option><option value="N">X</option></select></div>
+<div class="row">무선구간 <select id="wireless"></select></div>
 
-    <div class="section">
-      <div class="section-title">결과</div>
-      <div class="result-box">
-        <div class="result-label">총 정책금</div>
-        <div class="result-amount" id="totalPolicy">—</div>
-        
-      </div>
+<div class="result-tabs">
+ <div class="res-tab active" data-tab="policy">정책 결과</div>
+ <div class="res-tab" data-tab="kos">KOS 사은품</div>
+</div>
 
-      <div class="desc-box">
-        <div class="desc-head">
-          
-          <button class="button" id="copyBtn" type="button">설명 복사</button>
-        </div>
-        <pre id="policyDesc"></pre>
-      </div>
-    </div>
+<div id="panel-policy" class="res-panel active">
+ <div class="amount" id="total">-</div>
+</div>
+<div id="panel-kos" class="res-panel">
+ <div class="amount" id="kos">-</div>
+</div>
+</div>
 
-    
-  </div>
-
-  <script type="module" src="./js/ui-handler.js"></script>
-</body>
-</html>
+<script type="module" src="./js/ui.js"></script>
+</body></html>
