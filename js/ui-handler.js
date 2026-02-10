@@ -253,3 +253,28 @@ document.querySelectorAll('.result-tab').forEach(tab=>{
     kosEl.innerText = '-';
   }
 })();
+
+// 정책 결과 하단 KOS 사은품 요약 문구
+(function(){
+  var kosSummaryEl = document.getElementById('kosSummary');
+  if (!kosSummaryEl) return;
+
+  if (typeof matchedRow !== 'undefined' && matchedRow && matchedRow.KOS사은품) {
+    kosSummaryEl.innerText = '※ KOS 사은품 ' + matchedRow.KOS사은품 + '만원 별도';
+  } else {
+    kosSummaryEl.innerText = '※ KOS 사은품 없음';
+  }
+})();
+
+// 정책 기준 자동 반영
+(function(){
+  function setText(id, text){
+    var el=document.getElementById(id);
+    if(el) el.innerText=text;
+  }
+  setText('pa-bundle', state.bundle || '-');
+  setText('pa-internet', state.internet || '-');
+  setText('pa-tv', state.tv ? state.tv : '미적용');
+  setText('pa-onestop', state.onestop==='Y'?'적용(O)':'미적용(X)');
+  setText('pa-genie3', state.genie3==='Y'?'적용(O)':'미적용(X)');
+})();
