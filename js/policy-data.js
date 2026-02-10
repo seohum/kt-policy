@@ -1,1522 +1,1235 @@
-const POLICY_DATA = {
+export const POLICY_DATA = {
+  "wireless": {
+    "37K": 13.0,
+    "55K": 18.0,
+    "69K": 23.0,
+    "90K": 28.0,
+    "110K": 28.0
+  },
   "rows": [
     {
       "bundle": "인터넷 단품",
       "internet": "에센스",
       "tv": null,
+      "tvYn": "N",
       "onestop": "N",
       "genie3": "N",
-      "basePolicy": null,
-      "comboPolicy": null,
-      "totalPolicy": 10.0,
-      "kosGift": 5.0
+      "policy": 10.0
     },
     {
       "bundle": "인터넷 단품",
       "internet": "베이직",
       "tv": null,
+      "tvYn": "N",
       "onestop": "N",
       "genie3": "N",
-      "basePolicy": null,
-      "comboPolicy": null,
-      "totalPolicy": 6.0,
-      "kosGift": 4.0
+      "policy": 6.0
     },
     {
       "bundle": "인터넷 단품",
       "internet": "슬림플러스↓",
       "tv": null,
+      "tvYn": "N",
       "onestop": "N",
       "genie3": "N",
-      "basePolicy": null,
-      "comboPolicy": null,
-      "totalPolicy": 2.0,
-      "kosGift": 4.0
+      "policy": 2.0
     },
     {
       "bundle": "인터넷 단품",
       "internet": "슬림",
       "tv": null,
+      "tvYn": "N",
       "onestop": "N",
       "genie3": "N",
-      "basePolicy": null,
-      "comboPolicy": null,
-      "totalPolicy": 1.0,
-      "kosGift": 4.0
+      "policy": 1.0
     },
     {
       "bundle": "인터넷 단품",
       "internet": "에센스",
       "tv": null,
+      "tvYn": "N",
       "onestop": "Y",
       "genie3": "N",
-      "basePolicy": null,
-      "comboPolicy": null,
-      "totalPolicy": 17.0,
-      "kosGift": 5.0
+      "policy": 17.0
     },
     {
       "bundle": "인터넷 단품",
       "internet": "베이직",
       "tv": null,
+      "tvYn": "N",
       "onestop": "Y",
       "genie3": "N",
-      "basePolicy": null,
-      "comboPolicy": null,
-      "totalPolicy": 13.0,
-      "kosGift": 4.0
+      "policy": 13.0
     },
     {
       "bundle": "인터넷 단품",
       "internet": "슬림플러스↓",
       "tv": null,
+      "tvYn": "N",
       "onestop": "Y",
       "genie3": "N",
-      "basePolicy": null,
-      "comboPolicy": null,
-      "totalPolicy": 9.0,
-      "kosGift": 4.0
+      "policy": 9.0
     },
     {
       "bundle": "인터넷 단품",
       "internet": "슬림",
       "tv": null,
+      "tvYn": "N",
       "onestop": "Y",
       "genie3": "N",
-      "basePolicy": null,
-      "comboPolicy": null,
-      "totalPolicy": 8.0,
-      "kosGift": 4.0
+      "policy": 8.0
     },
     {
       "bundle": "M+I",
       "internet": "에센스",
       "tv": null,
+      "tvYn": "N",
       "onestop": "N",
       "genie3": "N",
-      "basePolicy": null,
-      "comboPolicy": null,
-      "totalPolicy": 24.0,
-      "kosGift": 5.0
+      "policy": 24.0
     },
     {
       "bundle": "M+I",
       "internet": "베이직",
       "tv": null,
+      "tvYn": "N",
       "onestop": "N",
       "genie3": "N",
-      "basePolicy": null,
-      "comboPolicy": null,
-      "totalPolicy": 16.0,
-      "kosGift": 4.0
+      "policy": 16.0
     },
     {
       "bundle": "M+I",
       "internet": "슬림플러스↓",
       "tv": null,
+      "tvYn": "N",
       "onestop": "N",
       "genie3": "N",
-      "basePolicy": null,
-      "comboPolicy": null,
-      "totalPolicy": 10.0,
-      "kosGift": 4.0
+      "policy": 10.0
     },
     {
       "bundle": "M+I",
       "internet": "에센스",
       "tv": null,
+      "tvYn": "N",
       "onestop": "Y",
       "genie3": "N",
-      "basePolicy": null,
-      "comboPolicy": null,
-      "totalPolicy": 31.0,
-      "kosGift": 5.0
+      "policy": 31.0
     },
     {
       "bundle": "M+I",
       "internet": "베이직",
       "tv": null,
+      "tvYn": "N",
       "onestop": "Y",
       "genie3": "N",
-      "basePolicy": null,
-      "comboPolicy": null,
-      "totalPolicy": 23.0,
-      "kosGift": 4.0
+      "policy": 23.0
     },
     {
       "bundle": "M+I",
       "internet": "슬림플러스↓",
       "tv": null,
+      "tvYn": "N",
       "onestop": "Y",
       "genie3": "N",
-      "basePolicy": null,
-      "comboPolicy": null,
-      "totalPolicy": 17.0,
-      "kosGift": 4.0
+      "policy": 17.0
     },
     {
       "bundle": "U+I",
       "internet": "에센스",
       "tv": null,
+      "tvYn": "N",
       "onestop": "Y",
       "genie3": "N",
-      "basePolicy": null,
-      "comboPolicy": null,
-      "totalPolicy": 31.0,
-      "kosGift": 5.0
+      "policy": 31.0
     },
     {
       "bundle": "U+I",
       "internet": "베이직",
       "tv": null,
+      "tvYn": "N",
       "onestop": "Y",
       "genie3": "N",
-      "basePolicy": null,
-      "comboPolicy": null,
-      "totalPolicy": 23.0,
-      "kosGift": 4.0
+      "policy": 23.0
     },
     {
       "bundle": "U+I",
       "internet": "슬림플러스↓",
       "tv": null,
+      "tvYn": "N",
       "onestop": "Y",
       "genie3": "N",
-      "basePolicy": null,
-      "comboPolicy": null,
-      "totalPolicy": 17.0,
-      "kosGift": 4.0
+      "policy": 17.0
     },
     {
       "bundle": "U+I",
       "internet": "에센스",
       "tv": null,
+      "tvYn": "N",
       "onestop": "Y",
       "genie3": "N",
-      "basePolicy": null,
-      "comboPolicy": null,
-      "totalPolicy": 31.0,
-      "kosGift": 5.0
+      "policy": 31.0
     },
     {
       "bundle": "U+I",
       "internet": "베이직",
       "tv": null,
+      "tvYn": "N",
       "onestop": "Y",
       "genie3": "N",
-      "basePolicy": null,
-      "comboPolicy": null,
-      "totalPolicy": 23.0,
-      "kosGift": 4.0
+      "policy": 23.0
     },
     {
       "bundle": "U+I",
       "internet": "슬림플러스↓",
       "tv": null,
+      "tvYn": "N",
       "onestop": "Y",
       "genie3": "N",
-      "basePolicy": null,
-      "comboPolicy": null,
-      "totalPolicy": 17.0,
-      "kosGift": 4.0
+      "policy": 17.0
     },
     {
       "bundle": "I+T",
       "internet": "에센스",
       "tv": "모든G 이상",
+      "tvYn": "Y",
       "onestop": "N",
       "genie3": "N",
-      "basePolicy": null,
-      "comboPolicy": null,
-      "totalPolicy": 29.0,
-      "kosGift": 10.0
+      "policy": 29.0
     },
     {
       "bundle": "I+T",
       "internet": "에센스",
       "tv": "에센스/플러스",
+      "tvYn": "Y",
       "onestop": "N",
       "genie3": "N",
-      "basePolicy": null,
-      "comboPolicy": null,
-      "totalPolicy": 22.0,
-      "kosGift": 10.0
+      "policy": 22.0
     },
     {
       "bundle": "I+T",
       "internet": "에센스",
       "tv": "라이트/베이직",
+      "tvYn": "Y",
       "onestop": "N",
       "genie3": "N",
-      "basePolicy": null,
-      "comboPolicy": null,
-      "totalPolicy": 21.0,
-      "kosGift": 9.0
+      "policy": 21.0
     },
     {
       "bundle": "I+T",
       "internet": "베이직",
       "tv": "모든G 이상",
+      "tvYn": "Y",
       "onestop": "N",
       "genie3": "N",
-      "basePolicy": null,
-      "comboPolicy": null,
-      "totalPolicy": 19.0,
-      "kosGift": 7.0
+      "policy": 19.0
     },
     {
       "bundle": "I+T",
       "internet": "베이직",
       "tv": "에센스/플러스",
+      "tvYn": "Y",
       "onestop": "N",
       "genie3": "N",
-      "basePolicy": null,
-      "comboPolicy": null,
-      "totalPolicy": 12.0,
-      "kosGift": 7.0
+      "policy": 12.0
     },
     {
       "bundle": "I+T",
       "internet": "베이직",
       "tv": "라이트/베이직",
+      "tvYn": "Y",
       "onestop": "N",
       "genie3": "N",
-      "basePolicy": null,
-      "comboPolicy": null,
-      "totalPolicy": 11.0,
-      "kosGift": 6.0
+      "policy": 11.0
     },
     {
       "bundle": "I+T",
       "internet": "슬림플러스↓",
       "tv": "모든G 이상",
+      "tvYn": "Y",
       "onestop": "N",
       "genie3": "N",
-      "basePolicy": null,
-      "comboPolicy": null,
-      "totalPolicy": 15.0,
-      "kosGift": 7.0
+      "policy": 15.0
     },
     {
       "bundle": "I+T",
       "internet": "슬림플러스↓",
       "tv": "에센스/플러스",
+      "tvYn": "Y",
       "onestop": "N",
       "genie3": "N",
-      "basePolicy": null,
-      "comboPolicy": null,
-      "totalPolicy": 8.0,
-      "kosGift": 7.0
+      "policy": 8.0
     },
     {
       "bundle": "I+T",
       "internet": "슬림플러스↓",
       "tv": "라이트/베이직",
+      "tvYn": "Y",
       "onestop": "N",
       "genie3": "N",
-      "basePolicy": null,
-      "comboPolicy": null,
-      "totalPolicy": 7.0,
-      "kosGift": 6.0
+      "policy": 7.0
     },
     {
       "bundle": "I+T",
       "internet": "에센스",
       "tv": "모든G 이상",
+      "tvYn": "Y",
       "onestop": "Y",
       "genie3": "N",
-      "basePolicy": null,
-      "comboPolicy": null,
-      "totalPolicy": 36.0,
-      "kosGift": 10.0
+      "policy": 36.0
     },
     {
       "bundle": "I+T",
       "internet": "에센스",
       "tv": "에센스/플러스",
+      "tvYn": "Y",
       "onestop": "Y",
       "genie3": "N",
-      "basePolicy": null,
-      "comboPolicy": null,
-      "totalPolicy": 29.0,
-      "kosGift": 10.0
+      "policy": 29.0
     },
     {
       "bundle": "I+T",
       "internet": "에센스",
       "tv": "라이트/베이직",
+      "tvYn": "Y",
       "onestop": "Y",
       "genie3": "N",
-      "basePolicy": null,
-      "comboPolicy": null,
-      "totalPolicy": 28.0,
-      "kosGift": 9.0
+      "policy": 28.0
     },
     {
       "bundle": "I+T",
       "internet": "베이직",
       "tv": "모든G 이상",
+      "tvYn": "Y",
       "onestop": "Y",
       "genie3": "N",
-      "basePolicy": null,
-      "comboPolicy": null,
-      "totalPolicy": 26.0,
-      "kosGift": 7.0
+      "policy": 26.0
     },
     {
       "bundle": "I+T",
       "internet": "베이직",
       "tv": "에센스/플러스",
+      "tvYn": "Y",
       "onestop": "Y",
       "genie3": "N",
-      "basePolicy": null,
-      "comboPolicy": null,
-      "totalPolicy": 19.0,
-      "kosGift": 7.0
+      "policy": 19.0
     },
     {
       "bundle": "I+T",
       "internet": "베이직",
       "tv": "라이트/베이직",
+      "tvYn": "Y",
       "onestop": "Y",
       "genie3": "N",
-      "basePolicy": null,
-      "comboPolicy": null,
-      "totalPolicy": 18.0,
-      "kosGift": 6.0
+      "policy": 18.0
     },
     {
       "bundle": "I+T",
       "internet": "슬림플러스↓",
       "tv": "모든G 이상",
+      "tvYn": "Y",
       "onestop": "Y",
       "genie3": "N",
-      "basePolicy": null,
-      "comboPolicy": null,
-      "totalPolicy": 22.0,
-      "kosGift": 7.0
+      "policy": 22.0
     },
     {
       "bundle": "I+T",
       "internet": "슬림플러스↓",
       "tv": "에센스/플러스",
+      "tvYn": "Y",
       "onestop": "Y",
       "genie3": "N",
-      "basePolicy": null,
-      "comboPolicy": null,
-      "totalPolicy": 15.0,
-      "kosGift": 7.0
+      "policy": 15.0
     },
     {
       "bundle": "I+T",
       "internet": "슬림플러스↓",
       "tv": "라이트/베이직",
+      "tvYn": "Y",
       "onestop": "Y",
       "genie3": "N",
-      "basePolicy": null,
-      "comboPolicy": null,
-      "totalPolicy": 14.0,
-      "kosGift": 6.0
+      "policy": 14.0
     },
     {
       "bundle": "I+T",
       "internet": "에센스",
       "tv": "모든G 이상",
+      "tvYn": "Y",
       "onestop": "Y",
       "genie3": "Y",
-      "basePolicy": null,
-      "comboPolicy": null,
-      "totalPolicy": 41.0,
-      "kosGift": 10.0
+      "policy": 41.0
     },
     {
       "bundle": "I+T",
       "internet": "에센스",
       "tv": "에센스/플러스",
+      "tvYn": "Y",
       "onestop": "Y",
       "genie3": "Y",
-      "basePolicy": null,
-      "comboPolicy": null,
-      "totalPolicy": 34.0,
-      "kosGift": 10.0
+      "policy": 34.0
     },
     {
       "bundle": "I+T",
       "internet": "에센스",
       "tv": "라이트/베이직",
+      "tvYn": "Y",
       "onestop": "Y",
       "genie3": "Y",
-      "basePolicy": null,
-      "comboPolicy": null,
-      "totalPolicy": 33.0,
-      "kosGift": 9.0
+      "policy": 33.0
     },
     {
       "bundle": "I+T",
       "internet": "베이직",
       "tv": "모든G 이상",
+      "tvYn": "Y",
       "onestop": "Y",
       "genie3": "Y",
-      "basePolicy": null,
-      "comboPolicy": null,
-      "totalPolicy": 31.0,
-      "kosGift": 7.0
+      "policy": 31.0
     },
     {
       "bundle": "I+T",
       "internet": "베이직",
       "tv": "에센스/플러스",
+      "tvYn": "Y",
       "onestop": "Y",
       "genie3": "Y",
-      "basePolicy": null,
-      "comboPolicy": null,
-      "totalPolicy": 24.0,
-      "kosGift": 7.0
+      "policy": 24.0
     },
     {
       "bundle": "I+T",
       "internet": "베이직",
       "tv": "라이트/베이직",
+      "tvYn": "Y",
       "onestop": "Y",
       "genie3": "Y",
-      "basePolicy": null,
-      "comboPolicy": null,
-      "totalPolicy": 23.0,
-      "kosGift": 6.0
+      "policy": 23.0
     },
     {
       "bundle": "I+T",
       "internet": "슬림플러스↓",
       "tv": "모든G 이상",
+      "tvYn": "Y",
       "onestop": "Y",
       "genie3": "Y",
-      "basePolicy": null,
-      "comboPolicy": null,
-      "totalPolicy": 27.0,
-      "kosGift": 7.0
+      "policy": 27.0
     },
     {
       "bundle": "I+T",
       "internet": "슬림플러스↓",
       "tv": "에센스/플러스",
+      "tvYn": "Y",
       "onestop": "Y",
       "genie3": "Y",
-      "basePolicy": null,
-      "comboPolicy": null,
-      "totalPolicy": 20.0,
-      "kosGift": 7.0
+      "policy": 20.0
     },
     {
       "bundle": "I+T",
       "internet": "슬림플러스↓",
       "tv": "라이트/베이직",
+      "tvYn": "Y",
       "onestop": "Y",
       "genie3": "Y",
-      "basePolicy": null,
-      "comboPolicy": null,
-      "totalPolicy": 19.0,
-      "kosGift": 6.0
+      "policy": 19.0
     },
     {
       "bundle": "I+T",
       "internet": "에센스",
       "tv": "모든G 이상",
+      "tvYn": "Y",
       "onestop": "N",
       "genie3": "Y",
-      "basePolicy": null,
-      "comboPolicy": null,
-      "totalPolicy": 34.0,
-      "kosGift": 10.0
+      "policy": 34.0
     },
     {
       "bundle": "I+T",
       "internet": "에센스",
       "tv": "에센스/플러스",
+      "tvYn": "Y",
       "onestop": "N",
       "genie3": "Y",
-      "basePolicy": null,
-      "comboPolicy": null,
-      "totalPolicy": 27.0,
-      "kosGift": 10.0
+      "policy": 27.0
     },
     {
       "bundle": "I+T",
       "internet": "에센스",
       "tv": "라이트/베이직",
+      "tvYn": "Y",
       "onestop": "N",
       "genie3": "Y",
-      "basePolicy": null,
-      "comboPolicy": null,
-      "totalPolicy": 26.0,
-      "kosGift": 9.0
+      "policy": 26.0
     },
     {
       "bundle": "I+T",
       "internet": "베이직",
       "tv": "모든G 이상",
+      "tvYn": "Y",
       "onestop": "N",
       "genie3": "Y",
-      "basePolicy": null,
-      "comboPolicy": null,
-      "totalPolicy": 24.0,
-      "kosGift": 7.0
+      "policy": 24.0
     },
     {
       "bundle": "I+T",
       "internet": "베이직",
       "tv": "에센스/플러스",
+      "tvYn": "Y",
       "onestop": "N",
       "genie3": "Y",
-      "basePolicy": null,
-      "comboPolicy": null,
-      "totalPolicy": 17.0,
-      "kosGift": 7.0
+      "policy": 17.0
     },
     {
       "bundle": "I+T",
       "internet": "베이직",
       "tv": "라이트/베이직",
+      "tvYn": "Y",
       "onestop": "N",
       "genie3": "Y",
-      "basePolicy": null,
-      "comboPolicy": null,
-      "totalPolicy": 16.0,
-      "kosGift": 6.0
+      "policy": 16.0
     },
     {
       "bundle": "I+T",
       "internet": "슬림플러스↓",
       "tv": "모든G 이상",
+      "tvYn": "Y",
       "onestop": "N",
       "genie3": "Y",
-      "basePolicy": null,
-      "comboPolicy": null,
-      "totalPolicy": 20.0,
-      "kosGift": 7.0
+      "policy": 20.0
     },
     {
       "bundle": "I+T",
       "internet": "슬림플러스↓",
       "tv": "에센스/플러스",
+      "tvYn": "Y",
       "onestop": "N",
       "genie3": "Y",
-      "basePolicy": null,
-      "comboPolicy": null,
-      "totalPolicy": 13.0,
-      "kosGift": 7.0
+      "policy": 13.0
     },
     {
       "bundle": "I+T",
       "internet": "슬림플러스↓",
       "tv": "라이트/베이직",
+      "tvYn": "Y",
       "onestop": "N",
       "genie3": "Y",
-      "basePolicy": null,
-      "comboPolicy": null,
-      "totalPolicy": 12.0,
-      "kosGift": 6.0
+      "policy": 12.0
     },
     {
       "bundle": "M+I+T",
       "internet": "에센스",
       "tv": "모든G 이상(MNP)",
+      "tvYn": "Y",
       "onestop": "Y",
       "genie3": "N",
-      "basePolicy": null,
-      "comboPolicy": null,
-      "totalPolicy": 61.0,
-      "kosGift": 10.0
+      "policy": 61.0
     },
     {
       "bundle": "M+I+T",
       "internet": "에센스",
       "tv": "모든G 이상",
+      "tvYn": "Y",
       "onestop": "Y",
       "genie3": "N",
-      "basePolicy": null,
-      "comboPolicy": null,
-      "totalPolicy": 55.0,
-      "kosGift": 10.0
+      "policy": 55.0
     },
     {
       "bundle": "M+I+T",
       "internet": "에센스",
       "tv": "에센스/플러스",
+      "tvYn": "Y",
       "onestop": "Y",
       "genie3": "N",
-      "basePolicy": null,
-      "comboPolicy": null,
-      "totalPolicy": 47.0,
-      "kosGift": 10.0
+      "policy": 47.0
     },
     {
       "bundle": "M+I+T",
       "internet": "에센스",
       "tv": "라이트/베이직",
+      "tvYn": "Y",
       "onestop": "Y",
       "genie3": "N",
-      "basePolicy": null,
-      "comboPolicy": null,
-      "totalPolicy": 46.0,
-      "kosGift": 9.0
+      "policy": 46.0
     },
     {
       "bundle": "M+I+T",
       "internet": "베이직",
       "tv": "모든G 이상(MNP)",
+      "tvYn": "Y",
       "onestop": "Y",
       "genie3": "N",
-      "basePolicy": null,
-      "comboPolicy": null,
-      "totalPolicy": 53.0,
-      "kosGift": 7.0
+      "policy": 53.0
     },
     {
       "bundle": "M+I+T",
       "internet": "베이직",
       "tv": "모든G 이상",
+      "tvYn": "Y",
       "onestop": "Y",
       "genie3": "N",
-      "basePolicy": null,
-      "comboPolicy": null,
-      "totalPolicy": 47.0,
-      "kosGift": 7.0
+      "policy": 47.0
     },
     {
       "bundle": "M+I+T",
       "internet": "베이직",
       "tv": "에센스/플러스",
+      "tvYn": "Y",
       "onestop": "Y",
       "genie3": "N",
-      "basePolicy": null,
-      "comboPolicy": null,
-      "totalPolicy": 39.0,
-      "kosGift": 7.0
+      "policy": 39.0
     },
     {
       "bundle": "M+I+T",
       "internet": "베이직",
       "tv": "라이트/베이직",
+      "tvYn": "Y",
       "onestop": "Y",
       "genie3": "N",
-      "basePolicy": null,
-      "comboPolicy": null,
-      "totalPolicy": 38.0,
-      "kosGift": 6.0
+      "policy": 38.0
     },
     {
       "bundle": "M+I+T",
       "internet": "슬림플러스↓",
       "tv": "모든G 이상",
+      "tvYn": "Y",
       "onestop": "Y",
       "genie3": "N",
-      "basePolicy": null,
-      "comboPolicy": null,
-      "totalPolicy": 40.0,
-      "kosGift": 7.0
+      "policy": 40.0
     },
     {
       "bundle": "M+I+T",
       "internet": "슬림플러스↓",
       "tv": "에센스/플러스",
+      "tvYn": "Y",
       "onestop": "Y",
       "genie3": "N",
-      "basePolicy": null,
-      "comboPolicy": null,
-      "totalPolicy": 32.0,
-      "kosGift": 7.0
+      "policy": 32.0
     },
     {
       "bundle": "M+I+T",
       "internet": "슬림플러스↓",
       "tv": "라이트/베이직",
+      "tvYn": "Y",
       "onestop": "Y",
       "genie3": "N",
-      "basePolicy": null,
-      "comboPolicy": null,
-      "totalPolicy": 31.0,
-      "kosGift": 6.0
+      "policy": 31.0
     },
     {
       "bundle": "M+I+T",
       "internet": "에센스",
       "tv": "모든G 이상(MNP)",
+      "tvYn": "Y",
       "onestop": "Y",
       "genie3": "Y",
-      "basePolicy": null,
-      "comboPolicy": null,
-      "totalPolicy": 66.0,
-      "kosGift": 10.0
+      "policy": 66.0
     },
     {
       "bundle": "M+I+T",
       "internet": "에센스",
       "tv": "모든G 이상",
+      "tvYn": "Y",
       "onestop": "Y",
       "genie3": "Y",
-      "basePolicy": null,
-      "comboPolicy": null,
-      "totalPolicy": 60.0,
-      "kosGift": 10.0
+      "policy": 60.0
     },
     {
       "bundle": "M+I+T",
       "internet": "에센스",
       "tv": "에센스/플러스",
+      "tvYn": "Y",
       "onestop": "Y",
       "genie3": "Y",
-      "basePolicy": null,
-      "comboPolicy": null,
-      "totalPolicy": 52.0,
-      "kosGift": 10.0
+      "policy": 52.0
     },
     {
       "bundle": "M+I+T",
       "internet": "에센스",
       "tv": "라이트/베이직",
+      "tvYn": "Y",
       "onestop": "Y",
       "genie3": "Y",
-      "basePolicy": null,
-      "comboPolicy": null,
-      "totalPolicy": 51.0,
-      "kosGift": 9.0
+      "policy": 51.0
     },
     {
       "bundle": "M+I+T",
       "internet": "베이직",
       "tv": "모든G 이상(MNP)",
+      "tvYn": "Y",
       "onestop": "Y",
       "genie3": "Y",
-      "basePolicy": null,
-      "comboPolicy": null,
-      "totalPolicy": 58.0,
-      "kosGift": 7.0
+      "policy": 58.0
     },
     {
       "bundle": "M+I+T",
       "internet": "베이직",
       "tv": "모든G 이상",
+      "tvYn": "Y",
       "onestop": "Y",
       "genie3": "Y",
-      "basePolicy": null,
-      "comboPolicy": null,
-      "totalPolicy": 52.0,
-      "kosGift": 7.0
+      "policy": 52.0
     },
     {
       "bundle": "M+I+T",
       "internet": "베이직",
       "tv": "에센스/플러스",
+      "tvYn": "Y",
       "onestop": "Y",
       "genie3": "Y",
-      "basePolicy": null,
-      "comboPolicy": null,
-      "totalPolicy": 44.0,
-      "kosGift": 7.0
+      "policy": 44.0
     },
     {
       "bundle": "M+I+T",
       "internet": "베이직",
       "tv": "라이트/베이직",
+      "tvYn": "Y",
       "onestop": "Y",
       "genie3": "Y",
-      "basePolicy": null,
-      "comboPolicy": null,
-      "totalPolicy": 43.0,
-      "kosGift": 6.0
+      "policy": 43.0
     },
     {
       "bundle": "M+I+T",
       "internet": "슬림플러스↓",
       "tv": "모든G 이상",
+      "tvYn": "Y",
       "onestop": "Y",
       "genie3": "Y",
-      "basePolicy": null,
-      "comboPolicy": null,
-      "totalPolicy": 45.0,
-      "kosGift": 7.0
+      "policy": 45.0
     },
     {
       "bundle": "M+I+T",
       "internet": "슬림플러스↓",
       "tv": "에센스/플러스",
+      "tvYn": "Y",
       "onestop": "Y",
       "genie3": "Y",
-      "basePolicy": null,
-      "comboPolicy": null,
-      "totalPolicy": 37.0,
-      "kosGift": 7.0
+      "policy": 37.0
     },
     {
       "bundle": "M+I+T",
       "internet": "슬림플러스↓",
       "tv": "라이트/베이직",
+      "tvYn": "Y",
       "onestop": "Y",
       "genie3": "Y",
-      "basePolicy": null,
-      "comboPolicy": null,
-      "totalPolicy": 36.0,
-      "kosGift": 6.0
+      "policy": 36.0
     },
     {
       "bundle": "M+I+T",
       "internet": "에센스",
       "tv": "모든G 이상(MNP)",
+      "tvYn": "Y",
       "onestop": "N",
       "genie3": "Y",
-      "basePolicy": null,
-      "comboPolicy": null,
-      "totalPolicy": 59.0,
-      "kosGift": 10.0
+      "policy": 59.0
     },
     {
       "bundle": "M+I+T",
       "internet": "에센스",
       "tv": "모든G 이상",
+      "tvYn": "Y",
       "onestop": "N",
       "genie3": "Y",
-      "basePolicy": null,
-      "comboPolicy": null,
-      "totalPolicy": 53.0,
-      "kosGift": 10.0
+      "policy": 53.0
     },
     {
       "bundle": "M+I+T",
       "internet": "에센스",
       "tv": "에센스/플러스",
+      "tvYn": "Y",
       "onestop": "N",
       "genie3": "Y",
-      "basePolicy": null,
-      "comboPolicy": null,
-      "totalPolicy": 45.0,
-      "kosGift": 10.0
+      "policy": 45.0
     },
     {
       "bundle": "M+I+T",
       "internet": "에센스",
       "tv": "라이트/베이직",
+      "tvYn": "Y",
       "onestop": "N",
       "genie3": "Y",
-      "basePolicy": null,
-      "comboPolicy": null,
-      "totalPolicy": 44.0,
-      "kosGift": 9.0
+      "policy": 44.0
     },
     {
       "bundle": "M+I+T",
       "internet": "베이직",
       "tv": "모든G 이상(MNP)",
+      "tvYn": "Y",
       "onestop": "N",
       "genie3": "Y",
-      "basePolicy": null,
-      "comboPolicy": null,
-      "totalPolicy": 51.0,
-      "kosGift": 7.0
+      "policy": 51.0
     },
     {
       "bundle": "M+I+T",
       "internet": "베이직",
       "tv": "모든G 이상",
+      "tvYn": "Y",
       "onestop": "N",
       "genie3": "Y",
-      "basePolicy": null,
-      "comboPolicy": null,
-      "totalPolicy": 45.0,
-      "kosGift": 7.0
+      "policy": 45.0
     },
     {
       "bundle": "M+I+T",
       "internet": "베이직",
       "tv": "에센스/플러스",
+      "tvYn": "Y",
       "onestop": "N",
       "genie3": "Y",
-      "basePolicy": null,
-      "comboPolicy": null,
-      "totalPolicy": 37.0,
-      "kosGift": 7.0
+      "policy": 37.0
     },
     {
       "bundle": "M+I+T",
       "internet": "베이직",
       "tv": "라이트/베이직",
+      "tvYn": "Y",
       "onestop": "N",
       "genie3": "Y",
-      "basePolicy": null,
-      "comboPolicy": null,
-      "totalPolicy": 36.0,
-      "kosGift": 6.0
+      "policy": 36.0
     },
     {
       "bundle": "M+I+T",
       "internet": "슬림플러스↓",
       "tv": "모든G 이상",
+      "tvYn": "Y",
       "onestop": "N",
       "genie3": "Y",
-      "basePolicy": null,
-      "comboPolicy": null,
-      "totalPolicy": 38.0,
-      "kosGift": 7.0
+      "policy": 38.0
     },
     {
       "bundle": "M+I+T",
       "internet": "슬림플러스↓",
       "tv": "에센스/플러스",
+      "tvYn": "Y",
       "onestop": "N",
       "genie3": "Y",
-      "basePolicy": null,
-      "comboPolicy": null,
-      "totalPolicy": 30.0,
-      "kosGift": 7.0
+      "policy": 30.0
     },
     {
       "bundle": "M+I+T",
       "internet": "슬림플러스↓",
       "tv": "라이트/베이직",
+      "tvYn": "Y",
       "onestop": "N",
       "genie3": "Y",
-      "basePolicy": null,
-      "comboPolicy": null,
-      "totalPolicy": 29.0,
-      "kosGift": 6.0
+      "policy": 29.0
     },
     {
       "bundle": "M+I+T",
       "internet": "에센스",
       "tv": "모든G 이상(MNP)",
+      "tvYn": "Y",
       "onestop": "N",
       "genie3": "N",
-      "basePolicy": null,
-      "comboPolicy": null,
-      "totalPolicy": 54.0,
-      "kosGift": 10.0
+      "policy": 54.0
     },
     {
       "bundle": "M+I+T",
       "internet": "에센스",
       "tv": "모든G 이상",
+      "tvYn": "Y",
       "onestop": "N",
       "genie3": "N",
-      "basePolicy": null,
-      "comboPolicy": null,
-      "totalPolicy": 48.0,
-      "kosGift": 10.0
+      "policy": 48.0
     },
     {
       "bundle": "M+I+T",
       "internet": "에센스",
       "tv": "에센스/플러스",
+      "tvYn": "Y",
       "onestop": "N",
       "genie3": "N",
-      "basePolicy": null,
-      "comboPolicy": null,
-      "totalPolicy": 40.0,
-      "kosGift": 10.0
+      "policy": 40.0
     },
     {
       "bundle": "M+I+T",
       "internet": "에센스",
       "tv": "라이트/베이직",
+      "tvYn": "Y",
       "onestop": "N",
       "genie3": "N",
-      "basePolicy": null,
-      "comboPolicy": null,
-      "totalPolicy": 39.0,
-      "kosGift": 9.0
+      "policy": 39.0
     },
     {
       "bundle": "M+I+T",
       "internet": "베이직",
       "tv": "모든G 이상(MNP)",
+      "tvYn": "Y",
       "onestop": "N",
       "genie3": "N",
-      "basePolicy": null,
-      "comboPolicy": null,
-      "totalPolicy": 46.0,
-      "kosGift": 7.0
+      "policy": 46.0
     },
     {
       "bundle": "M+I+T",
       "internet": "베이직",
       "tv": "모든G 이상",
+      "tvYn": "Y",
       "onestop": "N",
       "genie3": "N",
-      "basePolicy": null,
-      "comboPolicy": null,
-      "totalPolicy": 40.0,
-      "kosGift": 7.0
+      "policy": 40.0
     },
     {
       "bundle": "M+I+T",
       "internet": "베이직",
       "tv": "에센스/플러스",
+      "tvYn": "Y",
       "onestop": "N",
       "genie3": "N",
-      "basePolicy": null,
-      "comboPolicy": null,
-      "totalPolicy": 32.0,
-      "kosGift": 7.0
+      "policy": 32.0
     },
     {
       "bundle": "M+I+T",
       "internet": "베이직",
       "tv": "라이트/베이직",
+      "tvYn": "Y",
       "onestop": "N",
       "genie3": "N",
-      "basePolicy": null,
-      "comboPolicy": null,
-      "totalPolicy": 31.0,
-      "kosGift": 6.0
+      "policy": 31.0
     },
     {
       "bundle": "M+I+T",
       "internet": "슬림플러스↓",
       "tv": "모든G 이상",
+      "tvYn": "Y",
       "onestop": "N",
       "genie3": "N",
-      "basePolicy": null,
-      "comboPolicy": null,
-      "totalPolicy": 33.0,
-      "kosGift": 7.0
+      "policy": 33.0
     },
     {
       "bundle": "M+I+T",
       "internet": "슬림플러스↓",
       "tv": "에센스/플러스",
+      "tvYn": "Y",
       "onestop": "N",
       "genie3": "N",
-      "basePolicy": null,
-      "comboPolicy": null,
-      "totalPolicy": 25.0,
-      "kosGift": 7.0
+      "policy": 25.0
     },
     {
       "bundle": "M+I+T",
       "internet": "슬림플러스↓",
       "tv": "라이트/베이직",
+      "tvYn": "Y",
       "onestop": "N",
       "genie3": "N",
-      "basePolicy": null,
-      "comboPolicy": null,
-      "totalPolicy": 24.0,
-      "kosGift": 6.0
+      "policy": 24.0
     },
     {
       "bundle": "U+I+T",
       "internet": "에센스",
       "tv": "모든G 이상",
+      "tvYn": "Y",
       "onestop": "N",
       "genie3": "N",
-      "basePolicy": null,
-      "comboPolicy": null,
-      "totalPolicy": 50.0,
-      "kosGift": 10.0
+      "policy": 50.0
     },
     {
       "bundle": "U+I+T",
       "internet": "에센스",
       "tv": "에센스/플러스",
+      "tvYn": "Y",
       "onestop": "N",
       "genie3": "N",
-      "basePolicy": null,
-      "comboPolicy": null,
-      "totalPolicy": 36.0,
-      "kosGift": 10.0
+      "policy": 36.0
     },
     {
       "bundle": "U+I+T",
       "internet": "에센스",
       "tv": "라이트/베이직",
+      "tvYn": "Y",
       "onestop": "N",
       "genie3": "N",
-      "basePolicy": null,
-      "comboPolicy": null,
-      "totalPolicy": 35.0,
-      "kosGift": 9.0
+      "policy": 35.0
     },
     {
       "bundle": "U+I+T",
       "internet": "베이직",
       "tv": "모든G 이상",
+      "tvYn": "Y",
       "onestop": "N",
       "genie3": "N",
-      "basePolicy": null,
-      "comboPolicy": null,
-      "totalPolicy": 45.0,
-      "kosGift": 7.0
+      "policy": 45.0
     },
     {
       "bundle": "U+I+T",
       "internet": "베이직",
       "tv": "에센스/플러스",
+      "tvYn": "Y",
       "onestop": "N",
       "genie3": "N",
-      "basePolicy": null,
-      "comboPolicy": null,
-      "totalPolicy": 31.0,
-      "kosGift": 7.0
+      "policy": 31.0
     },
     {
       "bundle": "U+I+T",
       "internet": "베이직",
       "tv": "라이트/베이직",
+      "tvYn": "Y",
       "onestop": "N",
       "genie3": "N",
-      "basePolicy": null,
-      "comboPolicy": null,
-      "totalPolicy": 29.0,
-      "kosGift": 6.0
+      "policy": 29.0
     },
     {
       "bundle": "U+I+T",
       "internet": "슬림플러스↓",
       "tv": "모든G 이상",
+      "tvYn": "Y",
       "onestop": "N",
       "genie3": "N",
-      "basePolicy": null,
-      "comboPolicy": null,
-      "totalPolicy": 31.0,
-      "kosGift": 7.0
+      "policy": 31.0
     },
     {
       "bundle": "U+I+T",
       "internet": "슬림플러스↓",
       "tv": "에센스/플러스",
+      "tvYn": "Y",
       "onestop": "N",
       "genie3": "N",
-      "basePolicy": null,
-      "comboPolicy": null,
-      "totalPolicy": 23.0,
-      "kosGift": 7.0
+      "policy": 23.0
     },
     {
       "bundle": "U+I+T",
       "internet": "슬림플러스↓",
       "tv": "라이트/베이직",
+      "tvYn": "Y",
       "onestop": "N",
       "genie3": "N",
-      "basePolicy": null,
-      "comboPolicy": null,
-      "totalPolicy": 21.0,
-      "kosGift": 6.0
+      "policy": 21.0
     },
     {
       "bundle": "U+I+T",
       "internet": "에센스",
       "tv": "모든G 이상",
+      "tvYn": "Y",
       "onestop": "Y",
       "genie3": "N",
-      "basePolicy": null,
-      "comboPolicy": null,
-      "totalPolicy": 57.0,
-      "kosGift": 10.0
+      "policy": 57.0
     },
     {
       "bundle": "U+I+T",
       "internet": "에센스",
       "tv": "에센스/플러스",
+      "tvYn": "Y",
       "onestop": "Y",
       "genie3": "N",
-      "basePolicy": null,
-      "comboPolicy": null,
-      "totalPolicy": 43.0,
-      "kosGift": 10.0
+      "policy": 43.0
     },
     {
       "bundle": "U+I+T",
       "internet": "에센스",
       "tv": "라이트/베이직",
+      "tvYn": "Y",
       "onestop": "Y",
       "genie3": "N",
-      "basePolicy": null,
-      "comboPolicy": null,
-      "totalPolicy": 42.0,
-      "kosGift": 9.0
+      "policy": 42.0
     },
     {
       "bundle": "U+I+T",
       "internet": "베이직",
       "tv": "모든G 이상",
+      "tvYn": "Y",
       "onestop": "Y",
       "genie3": "N",
-      "basePolicy": null,
-      "comboPolicy": null,
-      "totalPolicy": 52.0,
-      "kosGift": 7.0
+      "policy": 52.0
     },
     {
       "bundle": "U+I+T",
       "internet": "베이직",
       "tv": "에센스/플러스",
+      "tvYn": "Y",
       "onestop": "Y",
       "genie3": "N",
-      "basePolicy": null,
-      "comboPolicy": null,
-      "totalPolicy": 38.0,
-      "kosGift": 7.0
+      "policy": 38.0
     },
     {
       "bundle": "U+I+T",
       "internet": "베이직",
       "tv": "라이트/베이직",
+      "tvYn": "Y",
       "onestop": "Y",
       "genie3": "N",
-      "basePolicy": null,
-      "comboPolicy": null,
-      "totalPolicy": 36.0,
-      "kosGift": 6.0
+      "policy": 36.0
     },
     {
       "bundle": "U+I+T",
       "internet": "슬림플러스↓",
       "tv": "모든G 이상",
+      "tvYn": "Y",
       "onestop": "Y",
       "genie3": "N",
-      "basePolicy": null,
-      "comboPolicy": null,
-      "totalPolicy": 38.0,
-      "kosGift": 7.0
+      "policy": 38.0
     },
     {
       "bundle": "U+I+T",
       "internet": "슬림플러스↓",
       "tv": "에센스/플러스",
+      "tvYn": "Y",
       "onestop": "Y",
       "genie3": "N",
-      "basePolicy": null,
-      "comboPolicy": null,
-      "totalPolicy": 30.0,
-      "kosGift": 7.0
+      "policy": 30.0
     },
     {
       "bundle": "U+I+T",
       "internet": "슬림플러스↓",
       "tv": "라이트/베이직",
+      "tvYn": "Y",
       "onestop": "Y",
       "genie3": "N",
-      "basePolicy": null,
-      "comboPolicy": null,
-      "totalPolicy": 28.0,
-      "kosGift": 6.0
+      "policy": 28.0
     },
     {
       "bundle": "U+I+T",
       "internet": "에센스",
       "tv": "모든G 이상",
+      "tvYn": "Y",
       "onestop": "Y",
       "genie3": "Y",
-      "basePolicy": null,
-      "comboPolicy": null,
-      "totalPolicy": 62.0,
-      "kosGift": 10.0
+      "policy": 62.0
     },
     {
       "bundle": "U+I+T",
       "internet": "에센스",
       "tv": "에센스/플러스",
+      "tvYn": "Y",
       "onestop": "Y",
       "genie3": "Y",
-      "basePolicy": null,
-      "comboPolicy": null,
-      "totalPolicy": 48.0,
-      "kosGift": 10.0
+      "policy": 48.0
     },
     {
       "bundle": "U+I+T",
       "internet": "에센스",
       "tv": "라이트/베이직",
+      "tvYn": "Y",
       "onestop": "Y",
       "genie3": "Y",
-      "basePolicy": null,
-      "comboPolicy": null,
-      "totalPolicy": 47.0,
-      "kosGift": 9.0
+      "policy": 47.0
     },
     {
       "bundle": "U+I+T",
       "internet": "베이직",
       "tv": "모든G 이상",
+      "tvYn": "Y",
       "onestop": "Y",
       "genie3": "Y",
-      "basePolicy": null,
-      "comboPolicy": null,
-      "totalPolicy": 57.0,
-      "kosGift": 7.0
+      "policy": 57.0
     },
     {
       "bundle": "U+I+T",
       "internet": "베이직",
       "tv": "에센스/플러스",
+      "tvYn": "Y",
       "onestop": "Y",
       "genie3": "Y",
-      "basePolicy": null,
-      "comboPolicy": null,
-      "totalPolicy": 43.0,
-      "kosGift": 7.0
+      "policy": 43.0
     },
     {
       "bundle": "U+I+T",
       "internet": "베이직",
       "tv": "라이트/베이직",
+      "tvYn": "Y",
       "onestop": "Y",
       "genie3": "Y",
-      "basePolicy": null,
-      "comboPolicy": null,
-      "totalPolicy": 41.0,
-      "kosGift": 6.0
+      "policy": 41.0
     },
     {
       "bundle": "U+I+T",
       "internet": "슬림플러스↓",
       "tv": "모든G 이상",
+      "tvYn": "Y",
       "onestop": "Y",
       "genie3": "Y",
-      "basePolicy": null,
-      "comboPolicy": null,
-      "totalPolicy": 43.0,
-      "kosGift": 7.0
+      "policy": 43.0
     },
     {
       "bundle": "U+I+T",
       "internet": "슬림플러스↓",
       "tv": "에센스/플러스",
+      "tvYn": "Y",
       "onestop": "Y",
       "genie3": "Y",
-      "basePolicy": null,
-      "comboPolicy": null,
-      "totalPolicy": 35.0,
-      "kosGift": 7.0
+      "policy": 35.0
     },
     {
       "bundle": "U+I+T",
       "internet": "슬림플러스↓",
       "tv": "라이트/베이직",
+      "tvYn": "Y",
       "onestop": "Y",
       "genie3": "Y",
-      "basePolicy": null,
-      "comboPolicy": null,
-      "totalPolicy": 33.0,
-      "kosGift": 6.0
+      "policy": 33.0
     },
     {
       "bundle": "U+I+T",
       "internet": "에센스",
       "tv": "모든G 이상",
+      "tvYn": "Y",
       "onestop": "N",
       "genie3": "Y",
-      "basePolicy": null,
-      "comboPolicy": null,
-      "totalPolicy": 55.0,
-      "kosGift": 10.0
+      "policy": 55.0
     },
     {
       "bundle": "U+I+T",
       "internet": "에센스",
       "tv": "에센스/플러스",
+      "tvYn": "Y",
       "onestop": "N",
       "genie3": "Y",
-      "basePolicy": null,
-      "comboPolicy": null,
-      "totalPolicy": 41.0,
-      "kosGift": 10.0
+      "policy": 41.0
     },
     {
       "bundle": "U+I+T",
       "internet": "에센스",
       "tv": "라이트/베이직",
+      "tvYn": "Y",
       "onestop": "N",
       "genie3": "Y",
-      "basePolicy": null,
-      "comboPolicy": null,
-      "totalPolicy": 40.0,
-      "kosGift": 9.0
+      "policy": 40.0
     },
     {
       "bundle": "U+I+T",
       "internet": "베이직",
       "tv": "모든G 이상",
+      "tvYn": "Y",
       "onestop": "N",
       "genie3": "Y",
-      "basePolicy": null,
-      "comboPolicy": null,
-      "totalPolicy": 50.0,
-      "kosGift": 7.0
+      "policy": 50.0
     },
     {
       "bundle": "U+I+T",
       "internet": "베이직",
       "tv": "에센스/플러스",
+      "tvYn": "Y",
       "onestop": "N",
       "genie3": "Y",
-      "basePolicy": null,
-      "comboPolicy": null,
-      "totalPolicy": 36.0,
-      "kosGift": 7.0
+      "policy": 36.0
     },
     {
       "bundle": "U+I+T",
       "internet": "베이직",
       "tv": "라이트/베이직",
+      "tvYn": "Y",
       "onestop": "N",
       "genie3": "Y",
-      "basePolicy": null,
-      "comboPolicy": null,
-      "totalPolicy": 34.0,
-      "kosGift": 6.0
+      "policy": 34.0
     },
     {
       "bundle": "U+I+T",
       "internet": "슬림플러스↓",
       "tv": "모든G 이상",
+      "tvYn": "Y",
       "onestop": "N",
       "genie3": "Y",
-      "basePolicy": null,
-      "comboPolicy": null,
-      "totalPolicy": 36.0,
-      "kosGift": 7.0
+      "policy": 36.0
     },
     {
       "bundle": "U+I+T",
       "internet": "슬림플러스↓",
       "tv": "에센스/플러스",
+      "tvYn": "Y",
       "onestop": "N",
       "genie3": "Y",
-      "basePolicy": null,
-      "comboPolicy": null,
-      "totalPolicy": 28.0,
-      "kosGift": 7.0
+      "policy": 28.0
     },
     {
       "bundle": "U+I+T",
       "internet": "슬림플러스↓",
       "tv": "라이트/베이직",
+      "tvYn": "Y",
       "onestop": "N",
       "genie3": "Y",
-      "basePolicy": null,
-      "comboPolicy": null,
-      "totalPolicy": 26.0,
-      "kosGift": 6.0
-    },
-    {
-      "bundle": "구분",
-      "internet": "nan",
-      "tv": "요금제",
-      "onestop": "가입 유형",
-      "genie3": "N",
-      "basePolicy": null,
-      "comboPolicy": null,
-      "totalPolicy": 90.0,
-      "kosGift": 37.0
-    },
-    {
-      "bundle": "무선구간",
-      "internet": "nan",
-      "tv": "5G/LTE 요금제",
-      "onestop": "MNP",
-      "genie3": "N",
-      "basePolicy": null,
-      "comboPolicy": null,
-      "totalPolicy": 28.0,
-      "kosGift": 13.0
+      "policy": 26.0
     }
   ]
 };
