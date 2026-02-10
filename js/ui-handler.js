@@ -240,8 +240,16 @@ document.querySelectorAll('.result-tab').forEach(tab=>{
   });
 });
 
-// 정책 결과 계산 후 KOS 사은품 출력 (만원 단위)
-if(typeof matchedRow !== 'undefined' && document.getElementById('kosAmount')){
-  document.getElementById('kosAmount').innerText =
-    matchedRow && matchedRow.kosGift ? matchedRow.kosGift + '만원' : '-';
-}
+
+
+// KOS 사은품 출력 (별도 탭, 만원 단위)
+(function(){
+  var kosEl = document.getElementById('kosAmount');
+  if(!kosEl) return;
+
+  if (typeof matchedRow !== 'undefined' && matchedRow && matchedRow.KOS사은품) {
+    kosEl.innerText = matchedRow.KOS사은품 + '만원';
+  } else {
+    kosEl.innerText = '-';
+  }
+})();
